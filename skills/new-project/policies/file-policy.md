@@ -36,6 +36,12 @@ Standard **plus**:
 - `research-decision` → a `berichte/` (reports) folder + a decision matrix doc.
 - `content-writing` → an outline/chapters structure instead of code docs.
 - `oss-library` → `CHANGELOG.md`, `LICENSE`, `CONTRIBUTING.md` from the start.
+- `game-dev` → an `assets/` + `design/` (GDD) folder; bible holds the core-loop spec.
+- `llm-app` → an `EVAL.md` (eval set + scores) + `prompts/` + `guardrails.md`.
+- `hardware-embedded` → a `firmware/` + `HARDWARE.md` (board, pinout, power budget, flash steps).
+- `creative-media` → an `assets/` + `pipeline.md` (produce→review→publish) + a content calendar.
+- `simulation` → a `VALIDATION.md` (analytic/benchmark cases, tolerances, convergence) + `notebooks/`.
+- `ecommerce-store` → a `catalog/` + `STORE.md` (products, payments, shipping, channels).
 
 ## Discipline (from the user's existing projects)
 - **Keep `CLAUDE.md` lean** — it is the only file loaded every session. Detail lives in the

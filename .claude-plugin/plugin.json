@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "project-kit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Stand up a perfectly-prepared project folder from a single 'new project' ask: grill the plan to a Definition of Ready, then auto-scaffold the right files, memory, project sub-agents and tooling — routing to type-specific sub-skills (website, api-backend, data-ml, quant-strategy, saas, cli-tool, desktop-app, mobile-app, browser-extension, bot-automation, ai-agent-mcp, oss-library, game-mod, research-decision, content-writing, generic) and a 7-day build-business ultraskill.",
   "author": {
     "name": "Skryx-L-A",

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.0 — 2026-06-14
+- Add 6 new type sub-skills: game-dev, llm-app, hardware-embedded, creative-media, simulation,
+  ecommerce-store. Routed in ROUTING.md, file-policy nudges added. 22 type sub-skills total.
+
 ## 0.1.0 — 2026-06-14
 - Initial project-kit.
 - `new-project` orchestrator skill: grill → Definition of Ready → business branch → routing →

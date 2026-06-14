@@ -53,10 +53,12 @@ project-kit list      # show the type sub-skills
 ```
 
 ## The sub-skills
+22 type sub-skills + a generic fallback:
 `build-business` (the 7-day business ultraskill) · `website` · `saas` · `api-backend` ·
 `data-ml` · `quant-strategy` · `cli-tool` · `desktop-app` · `mobile-app` · `browser-extension`
-· `bot-automation` · `ai-agent-mcp` · `oss-library` · `game-mod` · `research-decision` ·
-`content-writing` · `generic-project` (fallback for anything else).
+· `bot-automation` · `ai-agent-mcp` · `oss-library` · `game-mod` · `game-dev` · `llm-app` ·
+`hardware-embedded` · `creative-media` · `simulation` · `ecommerce-store` · `research-decision`
+· `content-writing` · `generic-project` (fallback for anything else).
 
 Projects are **composable** — a SaaS that must make money pulls `saas` + `website` +
 `api-backend` + `build-business`.

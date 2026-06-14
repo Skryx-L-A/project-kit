@@ -23,6 +23,12 @@ their deliverables all compose. Load each from `KIT/skills/<name>/SKILL.md`.
 | A browser extension | `browser-extension` |
 | A Discord/Telegram bot or workflow automation | `bot-automation` |
 | A full-stack SaaS product | `saas` (itself pulls `website` + `api-backend` + often `build-business`) |
+| A game built from scratch (engine, gameplay, assets) | `game-dev` |
+| An LLM-powered product (chatbot, RAG, agent app, fine-tune) | `llm-app` |
+| Firmware / embedded / microcontroller / robotics / IoT | `hardware-embedded` |
+| A creative-media pipeline (video/image gen, channel, ads, thumbnails) | `creative-media` |
+| A scientific-computing / numerical simulation (physics, orbital, Monte-Carlo) | `simulation` |
+| An e-commerce store / storefront (Shopify-first) | `ecommerce-store` (composes `website`; chain `build-business` for acquisition) |
 | Building a business / agency / making money | `build-business` (the ultraskill) |
 | Anything with **no** clear type match | `generic-project` (fallback) |
 
