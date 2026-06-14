@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.1 — 2026-06-14
+- email-manager/transports.md: document full send + read/summarize via a Gmail app password
+  (SMTP send + IMAP read), the reliable path when the Gmail MCP can't send or lacks scopes.
+
 ## 0.3.0 — 2026-06-14
 - Add 3 operational skills: agency-automations (the running delivery layer for build-business —
   speed-to-lead webhooks, reactivation, reviews/referrals, messaging/CRM/booking/Google-Business
