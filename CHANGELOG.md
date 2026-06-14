@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.2 — 2026-06-14
+- social-media-manager: add copy-rules.md (name real platforms not vague "and beyond"; no bare
+  lists — lead-in sentence required; lead with what the product does, balanced messaging not one
+  single angle; tone). Referenced from SKILL.md; brand.md owns per-product message order.
+
 ## 0.3.1 — 2026-06-14
 - email-manager/transports.md: document full send + read/summarize via a Gmail app password
   (SMTP send + IMAP read), the reliable path when the Gmail MCP can't send or lacks scopes.

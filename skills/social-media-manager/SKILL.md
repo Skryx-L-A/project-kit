@@ -26,6 +26,8 @@ A multi-platform manager. Use the parts the goal needs; they compose.
   (Meta/Google/Reddit/TikTok campaign setup, targeting, tracking, launch).
 - **Playbooks** (`playbooks/*`) — `content-engine.md` (plan→create→schedule→publish→engage→
   measure), `engagement.md` (replies/DMs/community).
+- **`copy-rules.md`** — how every post/ad must be written (name real platforms, no bare lists,
+  lead with what it does, balanced messaging, tone). Read it before drafting any copy.
 - **`AUTONOMY.md`** — how far Claude may act per action class. **`GUARDRAILS.md`** — hard rules.
 
 ## Mandatory grill-questions (fold into the Definition of Ready)
