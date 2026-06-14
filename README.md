@@ -19,13 +19,28 @@ cloud — *"neues Projekt" / "new project" / "let's build X"* and it runs one di
 No more going through a setup conversation by hand every time. The process *is* the repo.
 
 ## Install
+
+### Option A — as a Claude Code plugin (recommended: download & wire in two lines)
+```
+/plugin marketplace add Skryx-L-A/project-kit
+/plugin install project-kit@project-kit
+```
+That clones the repo as a marketplace and wires **all** skills (and the `new-project`
+orchestrator) into Claude automatically — nothing to symlink. Update later with
+`/plugin marketplace update project-kit`; remove with `/plugin uninstall project-kit`.
+
+### Option B — script install (no plugin system / dev use)
 ```bash
 git clone https://github.com/Skryx-L-A/project-kit ~/AI/project-kit   # or wherever
 cd ~/AI/project-kit && ./install.sh
 ```
-This symlinks every skill into `~/.claude/skills/` (repo stays the single source of truth),
-adds a fallback trigger entry to `~/.claude/CLAUDE.md`, and links the `project-kit` CLI.
-Use `--copy` instead of symlinks, `--force` to overwrite, `--uninstall` to remove.
+Symlinks every skill into `~/.claude/skills/` (repo stays the single source of truth) and links
+the `project-kit` CLI. `--copy` to copy instead, `--force` to overwrite, `--no-claude-md` to
+skip the optional global trigger entry, `--uninstall` to remove.
+
+> Use **one** install path, not both — the plugin and the symlinks would otherwise register the
+> same skills twice. If you installed via `install.sh` and switch to the plugin, run
+> `./install.sh --uninstall` first.
 
 ## Use
 Just tell Claude:
@@ -63,13 +78,14 @@ New project types, skills, ultra-skills, and agents drop in anytime — see
 ## Layout
 ```
 project-kit/
-├── install.sh            # wire skills into ~/.claude/skills + CLAUDE.md trigger
+├── .claude-plugin/       # plugin + marketplace manifests (download & wire via /plugin)
+├── install.sh            # script-install fallback (symlink into ~/.claude/skills)
 ├── bin/project-kit       # manual CLI fallback
 ├── skills/
-│   ├── new-project/      # the orchestrator: DoR, routing, policies, templates, scaffold.sh
+│   ├── new-project/      # the orchestrator: DoR, routing, policies, templates, scaffold.sh,
+│   │   └── agent-templates/   #   reusable sub-agent templates (specialised per project)
 │   ├── build-business/   # the 7-day business ultraskill (system, prompts, rubric, merged)
 │   └── <type>/SKILL.md   # one sub-skill per project type
-├── agents/               # reusable sub-agent templates
 └── docs/                 # ARCHITECTURE, EXTENDING, CONTRIBUTING
 ```
 

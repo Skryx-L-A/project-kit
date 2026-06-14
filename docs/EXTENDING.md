@@ -27,8 +27,10 @@ public skills/repos and any source material (video transcript, articles), keep a
 `merged/SOURCES.md` crediting everything, and flag unverified claims. Build it once, deeply.
 
 ## Add reusable agent templates
-Drop a `<name>.md` (frontmatter `name`/`description`/`tools` + system prompt) into `agents/`.
-The `new-project` flow specialises these into a project's `.claude/agents/`.
+Drop a `<name>.md` (frontmatter `name`/`description`/`tools` + system prompt) into
+`skills/new-project/agent-templates/`. The `new-project` flow specialises these into a
+project's `.claude/agents/`. (They live under the skill, not a top-level `agents/`, so the
+plugin doesn't expose them as always-on global agents.)
 
 ## Conventions
 - Keep every `SKILL.md` self-contained enough to symlink into `~/.claude/skills/` alone.

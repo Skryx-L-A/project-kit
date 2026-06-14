@@ -25,7 +25,8 @@ Derive from the DoR + matched sub-skills. Typical patterns:
   conventions, and done-bar.
 - Make domain agents **delegate-by-default** for their area (state this in the project
   `CLAUDE.md` so sessions actually use them).
-- Reuse the kit's reusable agent templates in `KIT/agents/` as starting points; specialise
+- Reuse the kit's reusable agent templates in `KIT/skills/new-project/agent-templates/` as
+  starting points; specialise
   them with the project's real names, paths, and rules.
 - Keep honesty agents (eval/backtest/security) genuinely adversarial — they exist to catch
   the builder, not rubber-stamp it.

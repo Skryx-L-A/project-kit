@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "project-kit",
+  "description": "Say \"new project\" → a perfectly-prepared project folder. Grills the plan to a Definition of Ready, then auto-scaffolds files, memory, sub-agents & tooling.",
+  "owner": {
+    "name": "Skryx-L-A",
+    "url": "https://github.com/Skryx-L-A"
+  },
+  "plugins": [
+    {
+      "name": "project-kit",
+      "description": "The new-project bootstrapper + 16 type sub-skills + the build-business 7-day ultraskill. Tell Claude 'neues Projekt' and it grills then scaffolds.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

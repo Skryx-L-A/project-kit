@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 # install.sh — wire project-kit into Claude so `new-project` (+ sub-skills) trigger anywhere.
+# Fallback installer. The recommended path is the Claude Code plugin:
+#   /plugin marketplace add Skryx-L-A/project-kit  &&  /plugin install project-kit@project-kit
+# Don't use both — they'd register the same skills twice.
 #
 #   ./install.sh                 # symlink all skills into ~/.claude/skills (repo = source of truth)
 #   ./install.sh --copy          # copy instead of symlink (for people who'll move/delete the repo)
