@@ -32,6 +32,19 @@ their deliverables all compose. Load each from `KIT/skills/<name>/SKILL.md`.
 | Building a business / agency / making money | `build-business` (the ultraskill) |
 | Anything with **no** clear type match | `generic-project` (fallback) |
 
+## Operational / capability skills (compose into a project; also trigger standalone)
+These are ongoing-operation skills, not one-off project types. Compose them when a project
+needs the capability; they also fire on their own when the user asks for that operation.
+
+| If the project needs… | Load skill |
+|---|---|
+| To DELIVER & RUN the local-business automations (webhooks, SMS/email sequences, booking, review automation) | `agency-automations` (the delivery layer for `build-business`) |
+| Ongoing social media management — ads, posts, subreddits/Reddit, scheduling, engagement | `social-media-manager` (composes `creative-media`) |
+| Ongoing email management — triage, drafting, summarizing, customer support, inbox ops | `email-manager` (Gmail MCP, draft-first) |
+
+A business that wants the full machine stacks `build-business` + `agency-automations` +
+`social-media-manager` + `email-manager`. A customer-support project pulls `email-manager`.
+
 ## Composition rules
 
 - **Stack, don't pick one.** A SaaS that needs paying customers = `saas` + `build-business`.

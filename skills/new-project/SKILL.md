@@ -71,8 +71,10 @@ Early in the grill, resolve the project's relationship to a business. Read
 
 ### 3 — ROUTE & COMPOSE SUB-SKILLS
 From the answers, detect **all** applicable project types and **stack** their sub-skills
-(projects are hybrid — a SaaS pulls `website` + `api-backend` + `build-business`). Read
-`ROUTING.md` for the type→sub-skill map and composition rules. Anything with no type match
+(projects are hybrid — a SaaS pulls `website` + `api-backend` + `build-business`; a business
+that wants the full machine also pulls the operational skills `agency-automations` +
+`social-media-manager` + `email-manager`). Read `ROUTING.md` for the type→sub-skill map, the
+operational/capability skills, and composition rules. Anything with no type match
 uses `generic-project`. Load each matched sub-skill from `KIT/skills/<name>/SKILL.md` and
 fold its extra grill-questions into step 1 and its deliverables into step 6.
 

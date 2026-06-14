@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.0 — 2026-06-14
+- Add 3 operational skills: agency-automations (the running delivery layer for build-business —
+  speed-to-lead webhooks, reactivation, reviews/referrals, messaging/CRM/booking/Google-Business
+  integrations, TCPA/CAN-SPAM/GDPR compliance enforced), social-media-manager (ads + Reddit/
+  subreddit posting + multi-platform scheduling/engagement, autonomy tiers + approval gate),
+  email-manager (Gmail-MCP draft-first inbox: triage/draft/summarize/support, send gate).
+- Routed as composable operational skills in ROUTING.md; README updated.
+
 ## 0.2.0 — 2026-06-14
 - Add 6 new type sub-skills: game-dev, llm-app, hardware-embedded, creative-media, simulation,
   ecommerce-store. Routed in ROUTING.md, file-policy nudges added. 22 type sub-skills total.

@@ -60,6 +60,13 @@ project-kit list      # show the type sub-skills
 `hardware-embedded` · `creative-media` · `simulation` · `ecommerce-store` · `research-decision`
 · `content-writing` · `generic-project` (fallback for anything else).
 
+**Operational / capability skills** (ongoing operations — compose into a project or trigger
+standalone): `agency-automations` (the running delivery layer for build-business — webhooks,
+SMS/email sequences, booking, review automation, compliance-enforced) · `social-media-manager`
+(autonomously runs socials — ads, posts, subreddits/Reddit, scheduling, engagement, behind an
+approval gate) · `email-manager` (autonomous inbox — triage, drafting, summarizing, customer
+support; draft-first with a send gate, via the Gmail MCP).
+
 Projects are **composable** — a SaaS that must make money pulls `saas` + `website` +
 `api-backend` + `build-business`.
 
