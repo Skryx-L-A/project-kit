@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+# project-kit — thin CLI over the new-project scaffolder. The full, grilled flow runs through
+# Claude (the `new-project` skill); this CLI is just for quick manual skeletons + install.
+set -euo pipefail
+KIT="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")/.." && pwd)"
+SCAFFOLD="$KIT/skills/new-project/scaffold.sh"
+
+usage() {
+  cat <<EOF
+project-kit — bootstrap kit CLI
+
+  project-kit new --name "<Name>" [--tier tiny|standard|large] [scaffold.sh opts]
+        lay down a project skeleton (then fill placeholders, ideally via the new-project skill)
+  project-kit install [--copy|--force|--uninstall]
+        (re)install the skills into ~/.claude/skills
+  project-kit list
+        list the available type sub-skills
+  project-kit help
+
+Note: the intended path is to just tell Claude "neues Projekt" and let the new-project skill
+grill + scaffold + fill. This CLI is a manual fallback.
+EOF
+}
+
+cmd="${1:-help}"; shift || true
+case "$cmd" in
+  new) exec "$SCAFFOLD" "$@";;
+  install) exec "$KIT/install.sh" "$@";;
+  list) ls -1 "$KIT/skills" | grep -v '^new-project$';;
+  help|-h|--help) usage;;
+  *) echo "unknown command: $cmd" >&2; usage; exit 2;;
+esac

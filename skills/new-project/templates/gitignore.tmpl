@@ -1,0 +1,31 @@
+# --- secrets & personal (NEVER commit, esp. in a public repo) ---
+.env
+.env.*
+*.key
+*.pem
+*.p12
+secrets/
+credentials*.json
+**/serviceAccount*.json
+.claude/settings.local.json
+NOTES.private.md
+*.private.*
+
+# --- deps / build ---
+node_modules/
+dist/
+build/
+.next/
+.astro/
+__pycache__/
+*.pyc
+.venv/
+venv/
+target/
+*.log
+
+# --- os / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

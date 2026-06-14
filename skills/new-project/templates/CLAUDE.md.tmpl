@@ -1,0 +1,52 @@
+# CLAUDE.md — {{PROJECT_NAME}}
+
+Auto-loaded every session in this directory. **This is the only doc loaded every session —
+keep it lean.** The rest (`PROJEKT_{{PROJECT_SLUG_UPPER}}.md`, `TASKS.md`, `DONE.md`) are read
+on demand.
+
+## What this project is
+{{ONE_SENTENCE_GOAL}}
+
+Readers/users: {{AUDIENCE}}. Full facts, scope, stack and phases → `PROJEKT_{{PROJECT_SLUG_UPPER}}.md`.
+
+{{BUSINESS_LINE}}
+
+**Repo:** {{REPO_LINE}}
+
+## Current focus
+{{CURRENT_FOCUS}}
+
+## The doc system
+| File | Role | Read when |
+|------|------|-----------|
+| `CLAUDE.md` | this — operating manual | auto-loaded every session |
+| `PROJEKT_{{PROJECT_SLUG_UPPER}}.md` | project bible (facts, scope, stack, phases, decisions) | need context / on a structure change |
+| `TASKS.md` | §1 user inbox · §2 my handoff | resuming work |
+| `DONE.md` | completed-work log + session reviews | need history |
+{{EXTRA_DOC_ROWS}}
+
+Fold any new doc/process need into these — don't spawn parallel docs. (`README.md` is the
+standard repo entry point — a carve-out.)
+
+## Auto-update protocol
+- **At milestones:** edit `TASKS.md §2` in place (move finished items into `DONE.md`, don't
+  leave checked `[x]`). Local write survives a crash. No commit yet.
+- **At session end:** finish doc edits, append a dated `DONE.md` entry, update this
+  "Current focus" one-liner, then {{COMMIT_LINE}}.
+- Edit `PROJEKT_{{PROJECT_SLUG_UPPER}}.md` only when a structure/stack/fact changes.
+
+## Project sub-agents (delegate by default)
+{{SUBAGENTS_LINE}}
+
+## Autonomy
+{{AUTONOMY_LINE}} Proactively use/search/install skills, subagents, tools, MCP, packages as
+needed. Drive a task to completion; stop only at genuine decisions or risky ops. Back up
+before risky ops. Debug autonomously; surface only when truly stuck, with options.
+
+## Conventions
+{{CONVENTIONS}}
+
+## Run / test
+```bash
+{{RUN_COMMANDS}}
+```

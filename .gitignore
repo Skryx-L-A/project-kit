@@ -1,0 +1,25 @@
+# --- secrets & personal (NEVER commit; this repo is PUBLIC) ---
+.env
+.env.*
+*.key
+*.pem
+secrets/
+credentials*.json
+*.private.*
+NOTES.private.md
+
+# --- scratch / research artifacts that shouldn't ship ---
+tmp/
+scratch/
+*.vtt
+*.srt
+transcript_*.txt
+
+# --- os / editor ---
+.DS_Store
+.idea/
+.vscode/
+*.log
+
+# --- personal grounding (local tailoring, never public) ---
+local/
