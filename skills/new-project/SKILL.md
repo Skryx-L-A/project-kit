@@ -20,7 +20,8 @@ tools can be added at any time. See `docs/EXTENDING.md` at the kit root.
 
 ## The kit root
 
-This skill is installed as a symlink into `~/.claude/skills/new-project`, but its real home
+This skill is installed either as a Claude Code **plugin** (marketplace — the normal path)
+or as a symlink into `~/.claude/skills/new-project` (legacy `install.sh`). Its real home
 (with the CLI, docs, and all sibling sub-skills) is the **project-kit repo**. Locate it once
 at the start, in this order, and remember the path as `KIT`:
 
