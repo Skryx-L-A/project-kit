@@ -1,3 +1,6 @@
+## 0.4.1 — 2026-07-10
+- Docs: new-project describes the plugin install path (marketplace) alongside the legacy symlink; add repo CLAUDE.md with contributor rules.
+
 # Changelog
 
 ## 0.4.0 — 2026-06-14
