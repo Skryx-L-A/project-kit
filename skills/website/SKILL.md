@@ -38,6 +38,29 @@ Check in environment-readiness; offer install, never auto-install:
 - **Netlify CLI** (`npm i -g netlify-cli`) for deploy + preview.
 - **MCP:** `claude-in-chrome` or `playwright` for live visual/a11y checks; `Figma` if a design file exists; `magic` (21st.dev) for UI component scaffolds.
 - **CHAIN these GLOBAL skills automatically at design start** (per the user's standing rule, no asking): `framer-inspiration` → `design-harvest` → `frontend-design`; and `web-aeo` once content exists. Use `higgsfield-generate` only for original imagery the user explicitly wants.
+- **Full design build order** (2026-07-29 addition, from the design-tooling research —
+  `design-bausteine` merges these steps in one place; read its `SKILL.md` for detail):
+  1. **Before building:** `framer-inspiration` / `design-harvest` supply the reference. `design-bausteine`
+     turns brief + reference into the four-part build prompt (Aesthetik/Referenz/Intent/Guardrails) and
+     decides one-shot vs. a 5→3→1 fan-out (parallel directions, narrow, pick one) when there's real
+     creative range — not for a small, already-decided change.
+  2. **While building:** `frontend-design` builds. The **Tweaks-Bar** (a Vite dev-server overlay for
+     live design-token tuning — colour/type/spacing/motion) replaces re-prompting for every font/spacing/
+     colour nuance; use it instead of round-tripping a whole page rebuild for a one-value change.
+  3. **Before shipping (mandatory gate, cheap and tokenless):** run `slop-detect <files-or-dir>`
+     (deterministic anti-slop/quality lint — 23 rules, no model, no network, exit 0 clean / 1 findings /
+     2 usage error; `--json` for machine-readable output) against every changed page. Exit 1 findings get
+     fixed or explicitly explained before "done" — this always runs, not only for client work.
+  4. Then `design-bausteine`'s capped self-audit (0-100 per category, a fix list, at most one confirmation
+     round — no open-ended re-polishing).
+  5. **For client-facing/public work, additionally** run `design-critique` (two forced isolated
+     assessments — one reads the design, one measures it with `slop-detect` + real contrast/breakpoint
+     numbers — plus one bounded fix round). Heavier and rarer than step 4; not for routine in-progress
+     feedback.
+- **PDF collateral shipped alongside the site** (Angebot, Preisliste, Pressemappe, a printable one-pager)
+  is a **document**, not a web page — build it with the `document-design` skill (own layout decisions,
+  Typst/Touying) and check it with `docrender review <file>` before handing it over, not with the web
+  toolchain.
 
 ## File / asset nudges (on top of the base set)
 Beyond CLAUDE.md, PROJEKT_<NAME>.md, TASKS.md, DONE.md, README, `.claude/`:
@@ -49,6 +72,8 @@ Beyond CLAUDE.md, PROJEKT_<NAME>.md, TASKS.md, DONE.md, README, `.claude/`:
 - `legal/` source for Impressum + Datenschutzerklärung pages.
 - `design/` — harvested inspiration refs + token notes from the chained skills.
 - `netlify.toml` — build + headers (CSP, security headers).
+- `collateral/` — any PDF companion pieces (Angebot, Preisliste, one-pager) built via the
+  `document-design` skill and checked with `docrender` before delivery.
 
 ## Stack defaults & done-bar
 **Default stack:** Astro 5 static output, TypeScript, `tokens.css`, content collections, self-hosted
@@ -71,4 +96,7 @@ Next.js only if the project genuinely needs SSR/app-server behaviour (then it li
 - **Honesty in copy:** flag any factual claim (stats, certifications, testimonials) for the user/client to confirm before publish; never invent credentials or quotes.
 - **Photo/consent:** no images of identifiable people without confirmed consent.
 - **Inspiration ≠ copying:** study patterns/tokens from `framer-inspiration`/`design-harvest`; never lift copyrighted assets or markup.
+- **Ship gate:** `slop-detect` must show exit 0 (or every finding explained, not silently ignored)
+  before a page is called done; client-facing/public builds additionally pass `design-critique`'s
+  two-pass review first.
 - **Commits under the user's name only (Skryx-L-A); never add Claude as co-author.**

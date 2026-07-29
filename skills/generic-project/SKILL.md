@@ -50,6 +50,11 @@ Minimal and general — no domain agents unless the project clearly grows one:
 Almost nothing is assumed — pull tools in only as the project reveals a need:
 - **Document tooling** *(if the project produces documents)* — `pdf` / `docx` / `xlsx` / `pptx` as
   the format requires; `doc-coauthoring` for any structured writing.
+- **A single designed document is the deliverable (2026-07-29 addition)** — Bericht, Angebot,
+  Lebenslauf, Deck, Einladung, and the like: chain the global `document-design` skill for the genre
+  call and the layout decisions (Typst/Touying, now also a real PPTX/DOCX path, not template-fill),
+  and `docrender` to render every page to an image and check it before "done". It self-triggers on
+  these request words; no separate project-kit sub-skill exists for this, by design (see `ROUTING.md`).
 - **CHAIN global skills opportunistically, not by default:**
   - `grill-me` — for a project with real unresolved decisions/branches.
   - `deep-research` — if any part needs sourced facts.

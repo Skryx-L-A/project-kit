@@ -39,6 +39,7 @@ Check in environment-readiness; offer install, never auto-install:
 - **MCP:** `Supabase` (DB/auth/edge), `playwright`/`claude-in-chrome` (flow + checkout testing), `n8n` (lifecycle automations), `magic` (UI).
 - **COMPOSE these sub-skills (don't duplicate):** `website` (marketing + app UI + DSGVO/a11y), `api-backend` (server, DB, contracts), and `build-business` (offer, pricing, acquisition) when it must earn revenue.
 - **CHAIN global skills:** `frontend-design`/`framer-inspiration`/`design-harvest` for UI; `web-aeo` for the marketing surface; `code-review` + `verify` before shipping flows.
+- **Design chain (2026-07-29 addition):** for real UI work on app screens, `design-bausteine` structures the build (four-part brief, fan-out for genuine range) the same way `website` does; run `slop-detect` on changed screens as a ship gate; for a paying customer's public-facing surface, `design-critique` before "done". Full order lives in `website`'s `SKILL.md`.
 
 ## File / asset nudges (on top of the base set)
 Beyond CLAUDE.md, PROJEKT_<NAME>.md, TASKS.md, DONE.md, README, `.claude/`:

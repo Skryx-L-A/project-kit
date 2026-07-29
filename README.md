@@ -70,6 +70,19 @@ support; draft-first with a send gate, via the Gmail MCP).
 Projects are **composable** — a SaaS that must make money pulls `saas` + `website` +
 `api-backend` + `build-business`.
 
+## Design & document chain (2026-07-29)
+Sub-skills that own a real visual or document surface (`website`, `saas`, `ecommerce-store`,
+`browser-extension`, `mobile-app`, `desktop-app`, `creative-media`, `social-media-manager`) now
+chain a small set of global skills/CLIs at the right point in the build: `framer-inspiration` /
+`design-harvest` for reference, `design-bausteine` to turn a brief into a four-part build prompt
+(and fan out multiple directions when there's real creative range), `slop-detect` as a mandatory,
+tokenless ship gate on real HTML/CSS, and `design-critique` (two forced isolated passes) before
+anything client-facing or public ships. Sub-skills whose deliverable is a PDF/deck/report
+(`research-decision`, `content-writing`, `game-dev`'s pitch deck) chain `document-design` +
+`docrender` instead — its own layout every time, every page rendered to an image and checked
+before "done". None of these tools ship inside project-kit itself; they're referenced by name as
+global skills/CLIs, same as `frontend-design` or `web-aeo` already were.
+
 ## Per-project structure it produces
 The user's proven system, scaled to project size:
 `CLAUDE.md` (lean, auto-loaded) · `PROJEKT_<NAME>.md` (the bible = filled Definition of

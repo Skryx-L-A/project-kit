@@ -47,6 +47,11 @@ customers, not just a store.
   is legible to AI assistants and search.
 - **`design-harvest`** (chain) — pull palette/typography/layout tokens from a reference shop
   for the theme (patterns/tokens only, never copy assets/code).
+- **Design chain (2026-07-29 addition):** for a custom storefront or a hand-edited Shopify theme
+  (real HTML/CSS/Liquid, not the theme editor's presets), `design-bausteine` structures the build
+  brief and `slop-detect` is a mandatory ship gate before the theme goes live — same order as
+  `website`'s `SKILL.md`. A storefront is client-facing by definition, so also run `design-critique`
+  before publishing.
 - **Compose, don't duplicate:** `website` for a custom storefront, `api-backend` for a custom
   cart/checkout, **`build-business`** for the acquisition/marketing engine.
 - **Global skills/agents to chain:** `deep-research` (payment/tax/region rules, platform

@@ -1,3 +1,41 @@
+## 0.5.1 — 2026-07-29
+- `new-project` routing gap closed: a single document/report/presentation/CV with no research
+  matrix and not book-length had no route and fell to `generic-project` unexplained. Added one
+  `ROUTING.md` row + a matching note in `generic-project/SKILL.md` pointing at the global
+  `document-design` (layout/genre) + `docrender` (render-check) skills — no new sub-skill, since
+  `document-design` already self-triggers on these request words.
+- `game-dev`, `content-writing`: updated the PPTX/DOCX mentions added in 0.5.0 — `document-design`
+  now has a real PPTX/DOCX generator path (own decision-gate, not template-fill), not just
+  Typst/Touying with PPTX as a fallback.
+
+## 0.5.0 — 2026-07-29
+- Wire in the new design/document tooling (built in the 2026-07-29 design-tooling research,
+  `~/AI/design-research/BEFUND.md`) across the sub-skills that own a real visual or document
+  surface: `slop-detect` (deterministic anti-slop lint) as a mandatory ship gate, `design-bausteine`
+  (four-part build brief + fan-out) at design start, `design-critique` (two isolated passes) before
+  client/public/store-facing work ships, and `document-design` + `docrender` for anything that
+  produces a real PDF/deck (report, proposal, CV, pitch deck, book export).
+- `website`: full build order documented (inspiration → `design-bausteine` → build → Tweaks-Bar →
+  `slop-detect` gate → self-audit → `design-critique` for client work) plus a `collateral/` nudge
+  for PDF companion pieces.
+- `saas`, `ecommerce-store`, `browser-extension`: same design chain added where the surface is real
+  HTML/CSS (app screens, custom storefront/theme, popup/options UI).
+- `mobile-app`, `desktop-app`: `design-bausteine` + `design-critique` added; `slop-detect` explicitly
+  scoped to Electron's renderer only (it reads CSS/Tailwind, not native Swift/Kotlin/Qt/Tauri UI).
+- `research-decision`, `content-writing`, `game-dev`: `document-design`/`docrender` added for the
+  report, book/manual export, and pitch deck respectively, alongside the existing `pdf`/`docx`/`pptx`
+  mentions (not replacing them).
+- `creative-media`, `social-media-manager`: `design-bausteine`'s four-part brief added for
+  thumbnail/brand-visual and ad-creative generation.
+- Not touched, with reason (see the session write-up): `oss-library` (no fixed-page document/UI
+  deliverable), `build-business`/`agency-automations` (internal Markdown assets / a runtime layer,
+  no shipped visual surface), `llm-app` (delegates its UI to `website`/`saas`, which already carry
+  the chain).
+- Noted as an open routing gap, not resolved here: a project that is purely a one-off
+  document/report/presentation/CV (no research matrix, not book-length) has no dedicated
+  `new-project` route today and falls to `generic-project`; see the session result file for the
+  proposal.
+
 ## 0.4.1 — 2026-07-10
 - Docs: new-project describes the plugin install path (marketplace) alongside the legacy symlink; add repo CLAUDE.md with contributor rules.
 

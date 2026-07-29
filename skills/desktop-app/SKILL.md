@@ -63,6 +63,11 @@ or mobile (`mobile-app`), though it composes with `cli-tool` when the app also s
   `verify` (run the built app), `code-review`, `doc-coauthoring` (README + install docs),
   `update-config` (permissions/hooks for build commands). For the desktop UI itself, the
   `framer-inspiration` / `design-harvest` skills inform layout even though it isn't a website.
+- **Design chain (2026-07-29 addition):** `design-bausteine`'s four-part brief and fan-out step apply
+  to the GUI regardless of framework. If Electron was chosen, the renderer is real HTML/CSS — run
+  `slop-detect` on it as a ship gate the same as a website; Qt/Tauri-native UIs skip `slop-detect`
+  (it reads CSS/Tailwind tokens, not native widgets). Either way, `design-critique` before release
+  gives `ui-reviewer` the same two-isolated-pass mechanism used for client-facing web work.
 
 ## File / asset nudges (on top of the base set)
 - `packaging/` — per-OS build configs (electron-builder.yml / tauri.conf.json / PyInstaller specs).

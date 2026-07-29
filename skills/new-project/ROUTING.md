@@ -19,6 +19,7 @@ their deliverables all compose. Load each from `KIT/skills/<name>/SKILL.md`.
 | A game mod | `game-mod` |
 | A research / decision project | `research-decision` |
 | A book / course / docs / writing project | `content-writing` |
+| A single document/report/presentation/CV/deck with no research matrix and not book-length (Angebot, Lebenslauf, one-pager, a one-off Vortragsstütze) | `generic-project` — additionally chain the global `document-design` skill for the layout/genre call and `docrender` to render-check it; it already self-triggers on these words, no dedicated sub-skill needed |
 | A publishable open-source library / package | `oss-library` |
 | A browser extension | `browser-extension` |
 | A Discord/Telegram bot or workflow automation | `bot-automation` |

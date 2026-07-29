@@ -56,6 +56,11 @@ Check in environment-readiness; offer install, never auto-install:
   Scholar Gateway, Clinical Trials for medical/academic; Semrush for market questions).
 - **Document tooling** — `xlsx` for the scoring matrix as a real spreadsheet; `pdf`/`docx` to
   export the final report; `pptx` if a decision briefing deck is wanted.
+- **`document-design` + `docrender` (2026-07-29 addition)** — the final recommendation report is
+  exactly the "Entscheidungsvorlage" genre this skill is built for: its own layout (never a
+  filled-in template), typeset in Typst, every page rendered to an image and checked with
+  `docrender review <file>` before it's called done. Use it in place of a plain `pdf` export
+  whenever the report is the actual deliverable someone reads and decides from, not an internal note.
 - **CHAIN these GLOBAL skills (the core of this type):**
   - `deep-research` — multi-source, fact-checked, cited research per candidate/criterion.
   - `council` — convene the four-voice decision council on the real tradeoff before recommending,

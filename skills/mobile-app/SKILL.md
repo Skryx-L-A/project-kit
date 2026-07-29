@@ -57,6 +57,11 @@ with `api-backend` when the app has a server.
   `doc-coauthoring` (store copy + README + privacy policy), `update-config` (allow build/submit
   commands). For UI inspiration the `framer-inspiration` / `design-harvest` skills inform layout
   and tokens even though it's not a website.
+- **Design chain (2026-07-29 addition):** `design-bausteine`'s four-part brief (Aesthetik/Referenz/
+  Intent/Guardrails) and its fan-out step apply to native screens too, even though the build tool is
+  SwiftUI/Compose/Flutter, not HTML/CSS — `slop-detect` does not (it reads CSS/Tailwind, not native
+  UI code). Before a store submission, run `design-critique` on the core screens (a stranger judges
+  every screenshot in the listing) alongside `store-compliance-reviewer`.
 
 ## File / asset nudges (on top of the base set)
 - `app/` or `src/screens/` — the scaffolded screen tree matching the grilled nav model.

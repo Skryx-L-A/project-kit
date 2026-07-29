@@ -58,6 +58,12 @@ Check in environment-readiness; offer install, never auto-install:
   - `doc-coauthoring` — the structured co-authoring workflow: context transfer, iterative
     refinement, reader-verification. Drive outlining and drafting through it.
   - `pdf` / `docx` / `pptx` — produce the polished export(s).
+  - **`document-design` + `docrender` (2026-07-29 addition)** — for a book/manual/whitepaper export,
+    this is the right tool over a plain PDF pipeline: it names the genre (Lesestrecke for a book,
+    Nachschlagewerk for a manual), decides the layout fresh instead of filling a shipped template,
+    and renders every page to an image for a real look before "done" — `docrender review <file>`
+    checks margins, font fallback, and orphan headings mechanically first. Covers a DOCX manuscript
+    export too (`document-design` now has a real PPTX/DOCX generator path, not Typst/Touying-only).
   - `deep-research` — when chapters need sourced facts; cite and mark verified vs. reasoned.
   - `verify` — confirm the exported artifact opens and reads as intended.
 

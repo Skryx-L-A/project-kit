@@ -36,6 +36,11 @@ Check in environment-readiness; offer install, never auto-install:
 - **web-ext** (`npm i -g web-ext`) for Firefox run/lint/sign; Chrome for `chrome://extensions` unpacked loading.
 - **MCP:** `claude-in-chrome` (load + drive the real extension in the user's Chrome — invoke the `claude-in-chrome` skill first) and/or `playwright` for automated flow tests; `magic` (21st.dev) for popup/options UI.
 - **CHAIN global skills:** `frontend-design` for the popup/options/overlay UI; `web-aeo` only if a marketing landing page is wanted; `code-review` + `verify` before packaging.
+- **Design chain (2026-07-29 addition):** the popup/options/overlay is real HTML/CSS, so it gets the
+  same treatment as a website surface — `design-bausteine` structures the build brief, and
+  `slop-detect <popup-dir>` is a mandatory ship gate before packaging (deterministic, no model, no
+  network). Since the listing is judged by strangers in a store, run `design-critique` (two isolated
+  passes) before the store submission, alongside `store-listing-author`'s copy review.
 
 ## File / asset nudges (on top of the base set)
 Beyond CLAUDE.md, PROJEKT_<NAME>.md, TASKS.md, DONE.md, README, `.claude/`:

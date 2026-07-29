@@ -23,7 +23,10 @@ A multi-platform manager. Use the parts the goal needs; they compose.
 - **Platforms** (`platforms/*`) — per-network posting, scheduling, ToS: `reddit.md` (deep),
   `x-twitter.md`, `linkedin.md`, `instagram-facebook.md`, `tiktok.md`.
 - **Ads** (`ads/*`) — `ad-creation.md` (hooks, copy, creative gen, A/B), `ad-platforms.md`
-  (Meta/Google/Reddit/TikTok campaign setup, targeting, tracking, launch).
+  (Meta/Google/Reddit/TikTok campaign setup, targeting, tracking, launch). **Design-chain addition
+  (2026-07-29):** `design-bausteine`'s four-part brief (Aesthetik/Referenz/Intent/Guardrails)
+  structures the creative brief before `ad-creative-generator` calls higgsfield — a poster-like
+  visual build, same as the skill's own website/document examples.
 - **Playbooks** (`playbooks/*`) — `content-engine.md` (plan→create→schedule→publish→engage→
   measure), `engagement.md` (replies/DMs/community).
 - **`account-creation.md`** — real-world playbook for creating accounts (browser-assisted; what's automatable vs needs-human; per-platform reality; IMAP verification codes; file-upload limits).

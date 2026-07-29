@@ -54,6 +54,11 @@ Check in environment-readiness; offer install, never auto-install:
   Use `media_upload_widget` / `media_import_url` for the user's own input media.
 - **CHAIN `design-harvest`** — pull palette/typography/spacing/component tokens from reference sites
   for the brand system and thumbnails. **CHAIN `framer-inspiration`** if the project ships a site.
+- **`design-bausteine` (2026-07-29 addition)** — its four-part build prompt (Aesthetik/Referenz/
+  Intent/Guardrails) is a better brief structure for `thumbnail-designer`/brand-visual generation
+  than a one-line prompt, and its fan-out step (5 directions → 3 → 1) fits a Soul/product-photoshoot
+  identity lock decision. It does not replace higgsfield generation — it structures the brief that
+  goes into it.
 - **CHAIN the `pptx` skill** for pitch/brand decks and the `magic` MCP for any web UI/overlay
   templates. `docx` for scripts/treatments if wanted.
 - **Editing/encoding** — `ffmpeg` (cut/caption/encode/aspect-convert), an NLE if hand-edited.

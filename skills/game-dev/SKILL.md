@@ -58,7 +58,11 @@ Check in environment-readiness; offer install, never auto-install:
 - **CHAIN the magic MCP** (21st.dev) for menus, HUD, and UI screens; `framer-inspiration` /
   `design-harvest` for the marketing/landing page if the game ships with a site.
 - **CHAIN global skills:** `deep-research` (engine/genre patterns), `verify` (launch + play the
-  build), `code-review`, `cli-anything` (wrap a GUI art tool headlessly), `pptx` (a pitch deck).
+  build), `code-review`, `cli-anything` (wrap a GUI art tool headlessly), `pptx` (a pitch deck) —
+  for the deck itself, run it through `document-design` first (2026-07-29 addition) to decide the
+  layout properly (Touying if a PDF is fine, PPTX if the recipient must edit it — `document-design`
+  now generates PPTX/DOCX with its own decision-gate too, not just Typst/Touying) instead of
+  typesetting straight into a shipped template.
 
 ## File / asset nudges (on top of the base set)
 Beyond CLAUDE.md, PROJEKT_<NAME>.md, TASKS.md, DONE.md, README, `.claude/`:
