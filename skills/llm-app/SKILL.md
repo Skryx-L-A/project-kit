@@ -18,9 +18,9 @@ Lock these before any code:
 - **Approach** — **RAG** (ground on documents) vs. **fine-tune** (teach a narrow style/format) vs.
   **prompt-only** (good system prompt + tools). Default to prompt-only → RAG; fine-tune only when
   prompting+RAG demonstrably fall short. Justify the pick.
-- **Base model** — chain `claude-api` for current ids: `claude-opus-4-8` (most capable),
-  `claude-sonnet-4-6`, `claude-haiku-4-5-20251001`, `claude-fable-5`. Default to the newest capable
-  that fits cost+latency; never guess model ids/pricing from memory.
+- **Base model** — chain `claude-api` for current ids and pricing; never guess them from memory.
+  Pick by fit for the job (cost/latency vs. how hard the judgment is), not reflexively the most
+  capable, and say why.
 - **Vector store + chunking** (RAG) — **Supabase pgvector by default**; chunk size/overlap,
   embedding model, and how chunks map back to a citeable source. How is retrieval *evaluated*?
 - **Data sources + ingestion** — where docs come from, formats (PDF/HTML/markdown), refresh
@@ -72,8 +72,8 @@ Beyond CLAUDE.md, PROJEKT_<NAME>.md, TASKS.md, DONE.md, README, `.claude/`:
 - `.env.example` — `ANTHROPIC_API_KEY`, Supabase keys (templates only; never the real `.env`).
 
 ## Stack defaults & done-bar
-**Default stack:** Anthropic SDK with the newest capable model (default `claude-opus-4-8`, drop to
-`claude-sonnet-4-6` / `claude-haiku-4-5-20251001` for cost/latency), RAG over **Supabase pgvector**,
+**Default stack:** Anthropic SDK with the model picked in the grill above (current id from
+`claude-api`, sized to the job), RAG over **Supabase pgvector**,
 prompt caching on the system prompt + retrieved context, streaming responses, evals via
 `skill-creator`'s harness, secrets in `.env`.
 **Done-bar (all true):**

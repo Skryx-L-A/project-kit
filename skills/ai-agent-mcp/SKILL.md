@@ -17,12 +17,16 @@ Lock these before any code:
 - **Form factor** — skill vs. subagent vs. MCP server vs. agent app? They have different shapes,
   runtimes, and "done" bars. If unsure, decide from how it's invoked (Claude reads a SKILL.md →
   skill; Claude delegates a scoped job → subagent; a tool surface other clients call → MCP; a
-  standalone program driving the model → agent app).
+  standalone program driving the model → agent app). A subagent runs invisibly to the user —
+  it fits a quick, well-scoped lookup or a single delegated build/review job whose actual
+  output the calling session checks afterward, not a standing "does the real work instead of
+  me" replacement for the main thread.
 - **Trigger surface** (skills/subagents) — what user phrasing or task shape must fire it, and what
   must NOT? The description line is the trigger; write it to match real intent, avoid false fires.
-- **Claude model** — chain `claude-api` for current model ids: `claude-opus-4-8` (most capable),
-  `claude-sonnet-4-6`, `claude-haiku-4-5-20251001`, `claude-fable-5`. Default to the newest/most
-  capable that fits cost+latency; justify the pick.
+- **Claude model** — chain `claude-api` for current model ids and pricing; never hardcode one
+  here, the lineup moves. Pick by fit for the job, not reflexively the most capable: a cheap
+  model for a narrow, mechanical subagent job, a stronger one where the judgment is hard —
+  and say why.
 - **Tools / permissions** — exactly which tools the skill/subagent/MCP gets, and the least-privilege
   set. For MCP: which tools/resources/prompts, their input schemas, and side-effect scope.
 - **Eval plan** — what "works" means as runnable checks (trigger-accuracy cases, golden tool calls,
@@ -31,6 +35,8 @@ Lock these before any code:
 - **State & secrets** — does it need state, files, or API keys? Where do keys live (never committed)?
 
 ## Project sub-agents to generate (into `.claude/agents/`)
+Same authoring rules as `SUBAGENT_GENERATION.md`: each is a leaf (it doesn't spawn further
+subagents), and the calling session checks its actual output before calling the job done.
 - **skill-author** *(delegate-by-default)* — authors/edits SKILL.md (frontmatter name+description +
   body) and subagent `.md` files to the kit's conventions; chains the `skill-creator` skill.
 - **eval-runner** *(delegate-by-default)* — builds and runs the eval suite (trigger accuracy, tool-call
@@ -65,7 +71,7 @@ Beyond CLAUDE.md, PROJEKT_<NAME>.md, TASKS.md, DONE.md, README, `.claude/`:
 ## Stack defaults & done-bar
 **Default stack:** skill/subagent = plain Markdown to kit conventions. MCP server = TypeScript on the
 `@modelcontextprotocol/sdk` (Python `mcp` if the surrounding code is Python). Agent app = `@anthropic-ai/sdk`
-with the newest capable model (default `claude-opus-4-8`, drop to `claude-sonnet-4-6` for cost/latency),
+with the model picked in the grill above (fit for the job, current id from `claude-api`),
 tool-use loop, prompt caching where it pays. Evals via `skill-creator`'s harness.
 
 **"Finished/working" means** (checkable bar):

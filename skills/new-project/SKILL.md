@@ -96,7 +96,10 @@ credentials, never commit them.
 ### 6 — BUILD PROJECT-SPECIFIC SUB-AGENTS (before any task starts)
 Read `SUBAGENT_GENERATION.md`. Generate the project's own sub-agents into
 `<project>/.claude/agents/` tailored to the stack and sub-skills, and wire them to
-auto-load, so the project is **as ready as possible** before work begins.
+auto-load, so the project is **as ready as possible** before work begins. Its authoring
+rules cover the parts that keep delegation safe once work starts: checking an agent's
+actual output rather than trusting its report, the leaf rule (an agent doesn't spawn
+further agents), and confirming before any agent-prepared publish/deploy/send goes out.
 
 ### 7 — SCAFFOLD, THEN FILL
 - Run `scaffold.sh` (in this folder) to lay down the deterministic skeleton + placeholder

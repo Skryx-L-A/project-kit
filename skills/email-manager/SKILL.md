@@ -86,7 +86,9 @@ given message, fall back to the **lower** tier.
 
 Generate these into the project so the inbox can be worked in parallel and reviewed
 adversarially. The domain agents are **delegate-by-default** — the main thread routes work to
-them rather than doing it inline.
+them rather than doing it inline, but still checks each agent's actual output (the draft, the
+label applied, the digest) before treating a batch as handled — a routed report is not a
+finished task on its own.
 
 - **inbox-triager** — sweeps unread/recent threads, scores priority, applies the label
   taxonomy, archives noise, emits the digest. Cheap model for bulk classify.

@@ -29,8 +29,8 @@ Lock these before any code:
   surface, flags breaking changes against the current minor.
 - **docs-writer** *(delegate-by-default)* — writes README, examples, docstrings/JSDoc/rustdoc, and the docs
   site; every public symbol gets a usage example.
-- **release-engineer** — owns SemVer bumps, CHANGELOG entries (Keep-a-Changelog), tagging, and the publish
-  step; refuses to publish on red CI or a dirty changelog.
+- **release-engineer** — owns SemVer bumps, CHANGELOG entries (Keep-a-Changelog), and tagging; prepares
+  the publish step but runs it only after the user confirms, and refuses on red CI or a dirty changelog.
 - **ci-setup** — builds/maintains the GitHub Actions matrix (lint, type-check, test across versions) and the
   publish workflow; chains `update-config` for any local hooks.
 - **test-author** — writes/extends the test suite + coverage; treats untested public API as not done.

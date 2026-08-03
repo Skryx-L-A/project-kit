@@ -62,8 +62,9 @@ Lock these before any wiring — most map directly onto compliance and cannot be
   isn't 10DLC-registered, email lacks unsubscribe + physical address, a list has no consent
   provenance, marketing sends into quiet hours, or the review flow gates on rating. Treats
   these as blockers, not warnings. (See COMPLIANCE.md — this agent's checklist.)
-- **deploy-runner** — publishes/validates the engine artifact (n8n validate→publish, or
-  api-backend deploy), runs the live end-to-end test, and confirms the done-bar.
+- **deploy-runner** — validates the engine artifact (n8n validate, or api-backend build) and
+  runs the end-to-end test against it; publishes/deploys to the live engine only after the
+  user confirms, then re-checks the done-bar against the live run.
 
 ## Tools / CLIs / MCP / skills to chain
 Check in environment-readiness; offer install, never auto-install or invent keys.

@@ -1,3 +1,25 @@
+## 0.6.0 — 2026-08-03
+- Sub-agent generation and delegation guidance brought up to the current understanding of how
+  a calling session, a subagent, and outward-facing actions should relate: `SUBAGENT_GENERATION.md`
+  now states that "delegate-by-default" covers routing work, not trusting a report without
+  checking the actual output; that a generated agent is a leaf and does not spawn further
+  sub-agents; and that publishing/deploying/sending is prepared by an agent but only executed
+  after the user confirms. `new-project/SKILL.md` step 6 and `ai-agent-mcp/SKILL.md` (the
+  skill/subagent/MCP meta-tooling builder) point at the same rules; `email-manager/SKILL.md`'s
+  domain-agent section gets the same verification clause.
+- Four `release-engineer`/`deploy-runner` sub-agents (`cli-tool`, `desktop-app`, `oss-library`,
+  `agency-automations`) now prepare the publish/release/deploy step but run it only after the
+  user confirms, instead of publishing on their own — an outward, hard-to-reverse action
+  shouldn't be a delegate's own call.
+- `ai-agent-mcp`, `llm-app`: removed hardcoded, stale Claude model ids (`claude-opus-4-8`,
+  `claude-sonnet-4-6`) from the "which model" grill question and stack defaults — both files
+  already told the reader to read `claude-api` and never hardcode/guess model ids, so the
+  hardcoded list above it was self-contradicting and would go stale again regardless. Now both
+  consistently point at `claude-api` and pick by fit for the job.
+- `workflows/README.md`: dropped the reference to an unverified "Workflow tool" and described
+  the folder's scripts against the same rules as a generated agent (checked per stage, nothing
+  published without confirmation).
+
 ## 0.5.1 — 2026-07-29
 - `new-project` routing gap closed: a single document/report/presentation/CV with no research
   matrix and not book-length had no route and fell to `generic-project` unexplained. Added one

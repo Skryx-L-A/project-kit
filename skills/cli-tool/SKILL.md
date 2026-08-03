@@ -38,7 +38,9 @@ hybrid. Use it for dev tools and terminal utilities; not for GUI apps (`desktop-
 - **`cli-ux-reviewer`** *(delegate-by-default)* — audits help text, flag/subcommand consistency,
   exit codes, error messages, and `--json` output; enforces the UX contract above.
 - **`release-engineer`** *(delegate-by-default)* — bumps the version, builds the wheel/sdist or
-  npm tarball, publishes to PyPI/npm, tags + cuts a GitHub Release; never invents version numbers.
+  npm tarball, prepares the PyPI/npm publish + GitHub Release; never invents version numbers.
+  Runs the actual publish/tag only after the user confirms — publishing is outward-facing and
+  hard to undo.
 - **`docs-writer`** *(delegate-by-default)* — keeps README usage, the man-page/`--help` text, and
   the changelog in sync with the actual commands.
 - **`test-author`** — writes/extends pytest|jest coverage for new subcommands, flags, and exit codes,

@@ -43,8 +43,9 @@ or mobile (`mobile-app`), though it composes with `cli-tool` when the app also s
 ## Project sub-agents to generate (`<project>/.claude/agents/`)
 - **`packager`** *(delegate-by-default)* — produces per-OS installers (NSIS/MSI, dmg/pkg,
   AppImage/deb/rpm or Tauri bundles); owns the build matrix and artifact naming.
-- **`release-engineer`** *(delegate-by-default)* — cuts the GitHub Release, uploads artifacts +
-  checksums, syncs the download page, pushes big assets to Hugging Face; never invents version tags.
+- **`release-engineer`** *(delegate-by-default)* — prepares the GitHub Release, artifacts +
+  checksums, and the download-page/Hugging-Face upload; never invents version tags. Cuts the
+  release and pushes the assets only after the user confirms — this ships to real users.
 - **`installer-tester`** — installs each artifact on a clean target, verifies launch, signing,
   auto-update, and offline-asset fetch; reports honestly when a lane is broken.
 - **`ui-reviewer`** — checks the GUI against the done-bar and the **no-emoji rule** (typographic
