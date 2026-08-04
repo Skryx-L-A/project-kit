@@ -1,3 +1,23 @@
+## 0.7.0 — 2026-08-04
+- Only the three independently-invokable skills (`new-project`, `email-manager`,
+  `social-media-manager`) still live under `skills/` and get registered/symlinked. The 24
+  type and operational sub-skills (`agency-automations`, `ai-agent-mcp`, `api-backend`,
+  `bot-automation`, `browser-extension`, `build-business`, `cli-tool`, `content-writing`,
+  `creative-media`, `data-ml`, `desktop-app`, `ecommerce-store`, `game-dev`, `game-mod`,
+  `generic-project`, `hardware-embedded`, `llm-app`, `mobile-app`, `oss-library`,
+  `quant-strategy`, `research-decision`, `saas`, `simulation`, `website`) moved unchanged to
+  a new `routes/` directory: `new-project` already read them by path
+  (`KIT/skills/<name>/SKILL.md`), never through the Skill tool, so registering them cost
+  ~3,400 tokens of `description` frontmatter in every session — including sessions that never
+  touch project creation — for no routing benefit. `routes/<name>/SKILL.md` is the same file,
+  reachable exactly as before through `new-project`'s `ROUTING.md`; `install.sh` never
+  touches `routes/`, so nothing there gets symlinked. Every `skills/<name>` reference to a
+  moved sub-skill was updated across `new-project`'s `SKILL.md`/`ROUTING.md`/
+  `DEFINITION_OF_READY.md`, `docs/ARCHITECTURE.md`, `docs/EXTENDING.md`, `README.md`, and
+  `bin/project-kit`'s `list` command (which previously only scanned `skills/` and would have
+  silently stopped listing the 24 sub-skills). Added `bin/measure-skill-tokens.sh` to catch a
+  future regression where a sub-skill drifts back into `skills/`.
+
 ## 0.6.0 — 2026-08-03
 - Sub-agent generation and delegation guidance brought up to the current understanding of how
   a calling session, a subagent, and outward-facing actions should relate: `SUBAGENT_GENERATION.md`

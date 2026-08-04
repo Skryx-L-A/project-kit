@@ -31,7 +31,15 @@ at the start, in this order, and remember the path as `KIT`:
 
 Everything this skill needs (`templates/`, `policies/`, `scaffold.sh`) lives **inside this
 skill folder**, so it works even if `KIT` cannot be found. `KIT` is only needed to reach the
-type-specific sub-skills under `KIT/skills/<name>/` and the docs.
+type-specific sub-skills under `KIT/routes/<name>/` and the docs.
+
+**Why `routes/`, not `skills/`:** the 24 type sub-skills this file routes to are read by
+path (below), never called through the Skill tool, so registering them as standalone Claude
+Code skills would buy nothing and cost something — together their `description` frontmatter
+runs to ~3,400 tokens that would sit in the context of *every* session, including ones that
+never touch project creation. Keeping them under `routes/` (still full, unabridged files,
+just outside the skills-scan directory) gets them out of that default load while leaving them
+exactly as reachable as before for this flow.
 
 **Local grounding (optional, private):** if `KIT/local/GROUNDING.md` exists, read it — it maps
 each sub-skill to the user's own real projects so you can tailor examples and conventions. It
@@ -76,7 +84,7 @@ From the answers, detect **all** applicable project types and **stack** their su
 that wants the full machine also pulls the operational skills `agency-automations` +
 `social-media-manager` + `email-manager`). Read `ROUTING.md` for the type→sub-skill map, the
 operational/capability skills, and composition rules. Anything with no type match
-uses `generic-project`. Load each matched sub-skill from `KIT/skills/<name>/SKILL.md` and
+uses `generic-project`. Load each matched sub-skill from `KIT/routes/<name>/SKILL.md` and
 fold its extra grill-questions into step 1 and its deliverables into step 6.
 
 ### 4 — ENVIRONMENT READINESS

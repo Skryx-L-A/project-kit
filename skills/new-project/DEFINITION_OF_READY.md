@@ -42,7 +42,7 @@ web / the user's existing projects whenever you can, instead of asking.
 
 ## C. Type-specific — pulled in by the matched sub-skill(s)
 
-Each sub-skill under `KIT/skills/<name>/SKILL.md` contributes its own mandatory questions —
+Each sub-skill under `KIT/routes/<name>/SKILL.md` contributes its own mandatory questions —
 e.g. `build-business` adds market/budget/country/offer; `website` adds brand/pages/CMS;
 `data-ml` adds dataset/eval/leakage guardrails; `quant-strategy` adds data source/backtest
 honesty. Fold those into the grill before scaffolding that part.

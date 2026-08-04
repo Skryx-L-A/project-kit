@@ -2,7 +2,10 @@
 
 Projects are **hybrid**. Detect **every** applicable type from the grill answers and **stack**
 the matching sub-skills — their grill-questions, their generated sub-agents, their files, and
-their deliverables all compose. Load each from `KIT/skills/<name>/SKILL.md`.
+their deliverables all compose. Load each type sub-skill from `KIT/routes/<name>/SKILL.md` — a
+plain path read, not a Skill-tool call. These sub-skills live under `routes/`, not `skills/`,
+precisely so they are never registered as standalone Claude Code skills and never load into a
+session that isn't creating a project.
 
 ## Type → sub-skill map
 
@@ -46,6 +49,12 @@ needs the capability; they also fire on their own when the user asks for that op
 A business that wants the full machine stacks `build-business` + `agency-automations` +
 `social-media-manager` + `email-manager`. A customer-support project pulls `email-manager`.
 
+`agency-automations` (like the type sub-skills above) loads from `KIT/routes/agency-automations/SKILL.md`
+by path. `social-media-manager` and `email-manager` are the two exceptions: they stay
+independently-invokable skills registered under `KIT/skills/`, so call them directly by name
+(the Skill tool) or, when composing them from inside this flow, load
+`KIT/skills/<name>/SKILL.md`.
+
 ## Composition rules
 
 - **Stack, don't pick one.** A SaaS that needs paying customers = `saas` + `build-business`.
@@ -63,4 +72,4 @@ A business that wants the full machine stacks `build-business` + `agency-automat
 ## Adding a new type
 
 New project types are expected over time (oriented on the user's real projects). To add one,
-create `KIT/skills/<new-type>/SKILL.md` and add a row here. See `docs/EXTENDING.md`.
+create `KIT/routes/<new-type>/SKILL.md` and add a row here. See `docs/EXTENDING.md`.

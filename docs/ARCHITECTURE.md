@@ -13,7 +13,7 @@ user: "neues Projekt"
         │
         ├─ 1. GRILL  → DEFINITION_OF_READY.md   (gate: nothing builds until locked)
         ├─ 2. BUSINESS BRANCH → BUSINESS_BRANCH.md (new / existing / part / none)
-        ├─ 3. ROUTE  → ROUTING.md → stack matching skills/<type>/SKILL.md (composable)
+        ├─ 3. ROUTE  → ROUTING.md → stack matching routes/<type>/SKILL.md (composable)
         ├─ 4. READINESS → ENVIRONMENT_READINESS.md (offer install / request keys)
         ├─ 5. STRUCTURE → policies/file-policy.md + policies/memory-policy.md (adaptive)
         ├─ 6. AGENTS → SUBAGENT_GENERATION.md → <project>/.claude/agents/
@@ -26,13 +26,22 @@ user: "neues Projekt"
 - **Skill** = the trigger that works everywhere, including cloud sessions (skills are global,
   fire on their `description`).
 - **Repo** = the single source of truth for the process, templates, policies, and all
-  sub-skills — public, shareable, versioned. `install.sh` symlinks the skills out of it so
-  there's no drift.
+  sub-skills — public, shareable, versioned. `install.sh` symlinks the `skills/` entries out
+  of it so there's no drift.
+
+## `skills/` vs `routes/`
+Only the three entry-point skills (`new-project`, `email-manager`, `social-media-manager`)
+live under `skills/` and get registered/symlinked — their `description` frontmatter is what
+Claude Code loads into every session. The 24 type and operational sub-skills live under
+`routes/` instead: `new-project` reads them by path (`KIT/routes/<name>/SKILL.md`), never
+through the Skill tool, so registering them would only cost context (~3,400 tokens of
+`description` fields) without adding a way to reach them. `install.sh` never touches
+`routes/` — nothing to symlink there.
 
 ## Self-containment
 `new-project/` carries everything it needs (templates, policies, scaffold.sh) so the symlinked
 skill works without finding the repo root. The repo root is only needed to reach the type
-sub-skills and docs.
+sub-skills (under `routes/`) and docs.
 
 ## Composition
 Routing stacks multiple sub-skills for hybrid projects; their grill-questions, sub-agents,

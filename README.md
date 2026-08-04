@@ -103,18 +103,23 @@ project-kit/
 ├── .claude-plugin/       # plugin + marketplace manifests (download & wire via /plugin)
 ├── install.sh            # script-install fallback (symlink into ~/.claude/skills)
 ├── bin/project-kit       # manual CLI fallback
-├── skills/
-│   ├── new-project/      # the orchestrator: DoR, routing, policies, templates, scaffold.sh,
+├── skills/                # entry-point skills only — these are what get registered/symlinked
+│   ├── new-project/      #   the orchestrator: DoR, routing, policies, templates, scaffold.sh,
 │   │   └── agent-templates/   #   reusable sub-agent templates (specialised per project)
-│   ├── build-business/   # the 7-day business ultraskill (system, prompts, rubric, merged)
-│   └── <type>/SKILL.md   # one sub-skill per project type
+│   ├── email-manager/     #   standalone inbox-management skill
+│   └── social-media-manager/  #   standalone social-ops skill
+├── routes/                # type + operational sub-skills — read by path from
+│   │                        ROUTING.md, never registered as skills (keeps their ~3,400
+│   │                        tokens of description frontmatter out of every session)
+│   ├── build-business/   #   the 7-day business ultraskill (system, prompts, rubric, merged)
+│   └── <type>/SKILL.md   #   one sub-skill per project type
 └── docs/                 # ARCHITECTURE, EXTENDING, CONTRIBUTING
 ```
 
 ## Credits & honesty
 The `build-business` ultraskill operationalises the framework from JP Middleton's *"How to
 start a 1-person business using Claude in 7 days"* and merges public founder/startup skill
-repos (credited in `skills/build-business/merged/SOURCES.md`). Marketing/revenue claims from
+repos (credited in `routes/build-business/merged/SOURCES.md`). Marketing/revenue claims from
 the source are flagged as **unverified** throughout.
 
 MIT licensed. Built in the open so anyone can clone and use it.

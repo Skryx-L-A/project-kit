@@ -26,7 +26,7 @@ cmd="${1:-help}"; shift || true
 case "$cmd" in
   new) exec "$SCAFFOLD" "$@";;
   install) exec "$KIT/install.sh" "$@";;
-  list) ls -1 "$KIT/skills" | grep -v '^new-project$';;
+  list) { ls -1 "$KIT/routes" 2>/dev/null; ls -1 "$KIT/skills" | grep -v '^new-project$'; } | sort;;
   help|-h|--help) usage;;
   *) echo "unknown command: $cmd" >&2; usage; exit 2;;
 esac
