@@ -8,6 +8,6 @@
     "url": "https://github.com/Skryx-L-A"
   },
   "homepage": "https://github.com/Skryx-L-A/project-kit",
-  "license": "MIT",
+  "license": "AGPL-3.0-only",
   "keywords": ["scaffolding", "project-bootstrap", "project-template", "agent-skills", "automation", "developer-tools"]
 }

@@ -122,4 +122,4 @@ start a 1-person business using Claude in 7 days"* and merges public founder/sta
 repos (credited in `routes/build-business/merged/SOURCES.md`). Marketing/revenue claims from
 the source are flagged as **unverified** throughout.
 
-MIT licensed. Built in the open so anyone can clone and use it.
+AGPL-3.0-only licensed. Built in the open so anyone can clone and use it.
