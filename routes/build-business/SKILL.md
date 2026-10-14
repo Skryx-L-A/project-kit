@@ -22,7 +22,7 @@ repository; see `merged/SOURCES.md`.
 ## What it builds (the deliverables)
 When loaded, after grilling the business inputs, this skill produces (into the project):
 - `MARKET.md` — the chosen market + the 3 researched candidates scored on the 4 criteria.
-- `SHIP.md` — the target ICP: top franchise/network brands + the Facebook referral motion.
+- `SHIP.md` — the target ICP: top franchise/network brands + the Facebook introduction routine.
 - `prompts/` — the **7 ready-to-run prompts** (below), pre-filled with the user's inputs.
 - `pillars/reactivation.md`, `pillars/reviews-referrals.md`, `pillars/speed-to-lead.md` —
   the three sellable service systems, generated for this market.
