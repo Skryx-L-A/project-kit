@@ -1,3 +1,14 @@
+## 0.8.0 — 2026-10-14
+- License changed to the MIT License. `LICENSE` is the MIT text, `NOTICE.md` credits the
+  public projects that inspired parts of the kit, `CONTRIBUTING.md` and the pull request
+  template now use inbound=outbound with a Developer Certificate of Origin sign-off, and
+  `ADDITIONAL-PERMISSIONS.md` and `COMMERCIAL-LICENSE.md` are removed. Earlier versions keep
+  their license: up to the tag `last-agpl` AGPL-3.0-only, up to the tag `last-polyform`
+  PolyForm Noncommercial 1.0.0.
+- The `build-business` prompts, day plans, rubric, sales outline and `merged/` notes were
+  rewritten in original wording with the same function, and `merged/SOURCES.md` now states
+  that those sources were inspiration only.
+
 ## 0.7.0 — 2026-08-04
 - Only the three independently-invokable skills (`new-project`, `email-manager`,
   `social-media-manager`) still live under `skills/` and get registered/symlinked. The 24

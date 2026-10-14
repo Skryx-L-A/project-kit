@@ -1,13 +1,13 @@
 {
   "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "project-kit",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Stand up a perfectly-prepared project folder from a single 'new project' ask: grill the plan to a Definition of Ready, then auto-scaffold the right files, memory, project sub-agents and tooling — routing to type-specific routes (website, api-backend, data-ml, llm-app, quant-strategy, saas, ecommerce-store, cli-tool, desktop-app, mobile-app, browser-extension, bot-automation, ai-agent-mcp, oss-library, game-mod, game-dev, hardware-embedded, creative-media, simulation, research-decision, content-writing, generic), the agency-automations route and a 7-day build-business ultraskill; plus the email-manager and social-media-manager skills.",
   "author": {
     "name": "Skryx-L-A",
     "url": "https://github.com/Skryx-L-A"
   },
   "homepage": "https://github.com/Skryx-L-A/project-kit",
-  "license": "PolyForm-Noncommercial-1.0.0",
+  "license": "MIT",
   "keywords": ["scaffolding", "project-bootstrap", "project-template", "agent-skills", "automation", "developer-tools"]
 }
