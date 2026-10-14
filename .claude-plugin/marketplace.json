@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "project-kit",
-      "description": "The new-project bootstrapper + 16 type sub-skills + the build-business 7-day ultraskill. Tell Claude 'neues Projekt' and it grills then scaffolds.",
+      "description": "The new-project bootstrapper + 21 type routes and a generic fallback + the build-business 7-day ultraskill + email-manager and social-media-manager. Tell Claude 'neues Projekt' and it grills then scaffolds.",
       "source": "./",
       "category": "productivity"
     }
