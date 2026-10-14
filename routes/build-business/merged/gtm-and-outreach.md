@@ -19,4 +19,4 @@ StoryBrand and scorecard marketing; SaaS financial projections (revenue multiple
 discounted cash flow); a landing-page method built on PAS with a scored conversion checklist;
 and Anthropic's published presentation and skill-authoring skills.
 
-Use for client acquisition, landing pages and positioning beyond the basic seven-day plan.
+Reach for it when you need more than the basic seven-day plan covers: winning clients, building landing pages and sharpening positioning.

@@ -16,5 +16,5 @@
 7. **Objections and next step:** work through "I need to think about it" and fix a concrete
    follow-up action.
 
-Use it in practice mode (role-play, flag every departure) and in call review mode (score a real
-transcript step by step).
+Use it in practice mode (role-play, flag every departure) and in call review mode (grade each
+step of an actual call from its transcript).
