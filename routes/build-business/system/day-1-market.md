@@ -1,11 +1,12 @@
-# Day 1 — Choose your market
-**Goal:** pick the market you'll serve. A good market picked fast beats a "perfect" one found
-in 6 months. Core thesis: **decisiveness** (The $100 Startup — 1,500 founders all picked a
-market and started within 1 week).
+# Day 1: Pick a market
+**Aim:** settle on the niche you will serve. A decent niche chosen this week beats an ideal one
+found after months. Guiding idea: act decisively and start within days.
 
-**Do:**
-1. Run `prompts/1-market-picker.md` in Claude with deep research + `rubrics/market-criteria.md`.
-2. Review the 3 returned markets against the 4 criteria; pick one (recurring + high-ticket +
-   growing wins). Record it in `MARKET.md` with the scores and the agencies already winning.
+**Steps:**
+1. Run `prompts/1-market-picker.md` with web research enabled and the rubric
+   `rubrics/market-criteria.md` attached.
+2. Compare the three niches it returns against the four tests and choose one (repeat
+   customers, large invoices and growth win). Write the choice to `MARKET.md` together with the
+   scores and the providers already succeeding there.
 
-**Output asset:** `MARKET.md`.
+**Deliverable:** `MARKET.md`.

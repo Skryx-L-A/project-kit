@@ -1,11 +1,13 @@
-# Day 3 — Pillar 1: Database Reactivation
-**Goal:** build the first sellable service. Reactivate a business's dormant leads/lapsed
-customers via SMS+email — **$0 ad spend**, the easiest "yes" for an owner.
+# Day 3: Service 1, reactivating old contacts
+**Aim:** assemble the first service you can sell. Win back dormant enquiries and lapsed
+customers by text and email. It costs no ad budget, which makes it the simplest offer for an
+owner to accept.
 
-**Do:**
-1. Run `prompts/3-reactivation.md` (pre-filled with the market + business name + offer).
-2. Save the generated multi-step SMS+email campaign to `pillars/reactivation.md`.
-3. Add the compliance block (opt-out on every SMS, consent only).
-4. Decide the delivery stack (CRM/GHL/n8n/Twilio/email) — flag missing tools/keys.
+**Steps:**
+1. Run `prompts/3-reactivation.md`, filled in with niche, business name and offer.
+2. Store the resulting multi-step campaign in `pillars/reactivation.md`.
+3. Append the compliance notes: an opt-out in every text, and only contacts who agreed.
+4. Choose the delivery stack (CRM, GHL, n8n, Twilio, email) and list any tool or key that is
+   still missing.
 
-**Output asset:** `pillars/reactivation.md`.
+**Deliverable:** `pillars/reactivation.md`.

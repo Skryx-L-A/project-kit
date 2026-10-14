@@ -1,24 +1,30 @@
-# Sources & merge rationale
+# Sources and how they were used
 
-## Primary system (the spine)
-- **YouTube:** JP Middleton — *"$25M AI Expert Explains: How to Start a 1 Person Business
-  Using Claude in 7 Days"* (https://youtu.be/TovKT7FEsF8, 41:47).
-  Full transcript captured and operationalised: the 7-day structure, the 4-criteria market
-  rubric, the 7 prompts, the franchise/referral motion, the 3 service pillars, the Facebook
-  Ad Library loop, and the 7-step sales trainer.
-  **Honesty:** revenue/result claims are unverified marketing inside a partnership funnel.
-  Framework, prompts, tools, and motion are the reusable, concrete assets.
+This kit was inspired by public material. It does not copy that material: the prompts, day
+plans, rubric, sales outline and the files in `merged/` are written independently in this
+repository's own wording. Licenses of related projects are listed in the top-level
+`NOTICE.md`.
 
-## Merged skill repos (frameworks layered on top)
-- bwerneckm/startup-skills — idea→Series-A backbone (Lean Canvas, BMC, validation, cash model).
-- mfwarren/entrepreneur-claude-skills — Hormozi offer, unit economics, pricing, n8n automation.
-- ognjengt/founder-skills — GTM, outreach, competitor intel, CRO, copy frameworks.
-- coreyhaines31/marketingskills; wondelai/skills; founderjourney/claude-skills;
-  alexdcd/Mafia-Claude-Skills; anthropics/skills — tier-2/3 cherry-picks.
+## Main inspiration
+- A public YouTube video about starting a one-person AI automation business in seven days
+  (https://youtu.be/TovKT7FEsF8). It suggested the overall shape: a day-by-day plan, a four-part
+  test for picking a niche, three services to sell, targeting franchise networks, studying
+  competitor ads and practising sales. The wording here is new.
+  **Caution:** the revenue and results claimed in the video are marketing statements that
+  could not be verified, and the video promotes a paid program. Treat every figure derived
+  from it as unverified.
 
-## Merge strategy
-Backbone (bwerneckm) for sequencing → offer+economics (mfwarren) for the money model →
-GTM/outreach (ognjengt + picks) for acquisition → the video's 7 prompts + rubric + motion as
-the concrete day-by-day execution layer. That combination is the differentiator no single repo
-has. Discovery lists for adding more: VoltAgent/awesome-agent-skills, travisvn/
-awesome-claude-skills, netresearch/claude-code-marketplace.
+## Further public repositories consulted for ideas
+- `bwerneckm/startup-skills`: general startup sequencing (idea to traction). Has no license,
+  so nothing from it is reproduced; only generally known methods are named.
+- `mfwarren/entrepreneur-claude-skills`: offers, unit economics, pricing, automation.
+- `ognjengt/founder-skills`: go-to-market, outreach, competitor research, conversion.
+- `coreyhaines31/marketingskills`, `wondelai/skills`, `alexdcd/Mafia-Claude-Skills`,
+  `anthropics/skills`: occasional pointers.
+- `founderjourney/claude-skills`: referenced earlier; no longer reachable.
+
+## How the parts fit
+Startup backbone for ordering the work, offer and economics for the money model, go-to-market
+and outreach for acquisition, then the seven-day prompts, rubric and referral routine as the
+daily execution layer. Places to find more public skills: VoltAgent/awesome-agent-skills,
+travisvn/awesome-claude-skills, netresearch/claude-code-marketplace.

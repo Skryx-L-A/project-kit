@@ -1,16 +1,18 @@
-# Prompt 5 — Speed-to-Lead nurture (Day 5, Pillar 3)
+# Prompt 5: Instant lead follow-up (Day 5, service 3)
 
-> You are a direct-response copywriter specialising in website lead-nurturing sequences.
-> Write a **complete five-message sequence** for the following client, designed to fire the
-> **instant** a web/Facebook form is submitted (inside the 5-minute "golden hour"), then
-> follow up persistently to the booking.
+> Write a lead-response sequence of exactly five messages for the client below. The first
+> message goes out automatically within seconds after someone submits a website or Facebook
+> lead form, well inside the first five minutes. The remaining messages keep reaching out
+> until the lead books. Write each message out in full.
 >
-> - Market: {{MARKET}}
-> - Specific service the lead inquired about: {{SERVICE e.g. medical weight loss}}
+> - Niche: {{MARKET}}
+> - Service the lead asked about: {{SERVICE e.g. medical weight loss}}
 > - Business name: {{BUSINESS_NAME}}
-> - Primary desired action: {{ACTION e.g. book a free in-person consultation}}
+> - Goal of the sequence: {{ACTION e.g. book a free consultation on site}}
 
-**Why:** after 5 minutes, conversion drops >400%; most businesses take ~42 hours. Instant
-auto-reply + booking link + persistent nurture wins the lead before a competitor does.
+**Why:** commonly cited data say the chance of converting a lead falls sharply after the first
+five minutes, while the average business takes more than a day to reply. An immediate reply
+with a booking link, followed by steady reminders, reaches the lead before a competitor does.
+Treat those figures as unverified.
 
-**Compliance:** opt-out + consent as above.
+**Compliance:** consent and opt-out as in the other services.

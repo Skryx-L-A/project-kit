@@ -1,11 +1,12 @@
-# Day 7 — Sales trainer
-**Goal:** remove the real bottleneck — your own sales skill. Build a trainer on the 7-step
-framework with drill + review modes.
+# Day 7: Sales coach
+**Aim:** address what most limits you, which is how well you sell. Set up a coach around the
+seven-step framework with a practice mode and a call review mode.
 
-**Do:**
-1. Run `prompts/7-sales-trainer.md` (loaded with `sales/seven-step-framework.md`).
-2. Save the trainer setup to `sales/trainer.md`.
-3. Practise in **drill mode** (role-play prospect, fix framework breaks); after real calls, use
-   **review mode** (paste transcript, score step-by-step).
+**Steps:**
+1. Run `prompts/7-sales-trainer.md` with `sales/seven-step-framework.md` loaded.
+2. Keep the coach setup in `sales/trainer.md`.
+3. Rehearse in practice mode (role-played prospect, correct each departure from the
+   framework). After genuine calls, switch to call review mode and score the transcript step
+   by step.
 
-**Output asset:** `sales/trainer.md`.
+**Deliverable:** `sales/trainer.md`.

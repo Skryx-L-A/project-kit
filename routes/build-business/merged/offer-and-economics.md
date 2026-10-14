@@ -1,16 +1,19 @@
-# Merged: Offer + unit economics + automation
-Source: `mfwarren/entrepreneur-claude-skills` (24 skills). Closest to the agency model.
+# Offer, unit economics and automation
+Inspired by public entrepreneur-skill collections (see `SOURCES.md`); the text below is written
+independently. This is the part closest to the agency model.
 
-Lift:
-- **Offer creation — Hormozi value equation**: maximise (dream outcome × perceived likelihood)
-  ÷ (time delay × effort). Pairs directly with the video's "easiest yes" offer logic →
-  produces `OFFER.md`.
-- **Market research** — TAM/SAM/SOM, interview + survey design (complements Prompt 1).
-- **Product-market fit** — Sean Ellis test.
-- **Pricing strategy** — anchor the $X/mo retainer + ad-spend model.
-- **Unit economics** — CAC / LTV / payback; sanity-check the agency's own numbers.
-- **Automation workflows** — Zapier / Make / **n8n**: the actual delivery rails for the 3
-  pillars (reactivation, reviews, speed-to-lead). The kit has an n8n MCP — use it.
-- **Cold outreach** — kept as a *fallback*; the video prefers paid ads.
+Apply:
+- **Offer design with the value equation:** an offer grows stronger as the promised result and
+  the buyer's confidence in it rise, and as waiting time and effort fall. This matches the
+  "easiest yes" logic of the seven-day plan. Output: `OFFER.md`.
+- **Market sizing:** total, serviceable and obtainable market, plus interview and survey design
+  to complement Prompt 1.
+- **Product-market fit check:** ask users how disappointed they would be to lose the product.
+- **Pricing:** set the monthly retainer and decide how ad spend is handled.
+- **Unit economics:** customer acquisition cost, lifetime value and payback period, used to test
+  the agency's own numbers.
+- **Automation:** Zapier, Make or n8n as the delivery layer for the three services
+  (reactivation, reviews, instant lead response). If an n8n MCP is available, use it.
+- **Cold outreach:** keep as a fallback only; the plan prefers paid ads.
 
-When to use: building `OFFER.md`, pricing, and wiring the pillars to a real automation stack.
+Use when preparing `OFFER.md`, fixing prices and wiring the services to a real automation stack.

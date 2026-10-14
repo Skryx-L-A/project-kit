@@ -1,19 +1,21 @@
-# Prompt 3 — Database Reactivation campaign (Day 3, Pillar 1)
+# Prompt 3: Dormant-customer reactivation (Day 3, service 1)
 
-> You are a direct-response copywriter specialising in SMS and email reactivation campaigns
-> for local businesses. Write a **complete AI database reactivation campaign** for the
-> following client: a multi-step SMS + email sequence that wins back dormant leads and lapsed
-> customers, with persistent (but polite) follow-up until they book, a clear incentive/offer,
-> and a booking call-to-action. Output every SMS and every email in full.
+> You write marketing messages that get replies from customers who have gone quiet. Produce
+> the full text of a campaign for the client below that revives old enquiries and former
+> customers by text message and email. It needs several steps, keeps following up politely
+> until the person books, makes one clear offer, and ends each message with a way to book.
+> Give me every text and every email word for word.
 >
-> - Market: {{MARKET}}
+> - Niche: {{MARKET}}
 > - Business name: {{BUSINESS_NAME}}
-> - Offer/incentive: {{OFFER e.g. $100 off first appointment, book by Friday}}
-> - Desired action: {{ACTION e.g. book a consultation}}
+> - Offer: {{OFFER e.g. $100 off the first visit, valid until Friday}}
+> - What the recipient should do: {{ACTION e.g. book a consultation}}
 
-**Why it works:** every local business sits on ~thousands of dormant leads (form-fills who
-didn't buy, lapsed members) already in their CRM — reactivating them costs **$0 in ad spend**,
-the easiest "yes" for an owner. Old clients > new clients when starting.
+**Why it works:** almost every local business has a large pile of contacts in its CRM who
+asked a question once or stopped coming, and nobody follows up. Contacting them needs no ad
+budget, so it is the easiest first offer to sell to an owner. Start with past contacts before
+chasing new ones.
 
-**Compliance:** every SMS must include an opt-out (e.g. "Reply STOP to opt out"); only message
-contacts with prior consent; respect TCPA/GDPR. Note this in the deliverable.
+**Compliance:** put an opt-out line in every text (for example "Reply STOP to unsubscribe"),
+contact only people who agreed to hear from the business, and follow TCPA and GDPR. State
+these conditions in the deliverable.

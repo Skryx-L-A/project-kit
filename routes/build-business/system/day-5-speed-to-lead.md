@@ -1,10 +1,12 @@
-# Day 5 — Pillar 3: Speed-to-Lead
-**Goal:** build the third service — instant follow-up inside the **5-minute golden hour** when
-a web/Facebook form is submitted (after 5 min, conversion drops >400%).
+# Day 5: Service 3, instant lead response
+**Aim:** build the third service: a reply that goes out within five minutes of a web or
+Facebook form submission, because the chance to convert is commonly said to drop steeply after
+that (an unverified figure).
 
-**Do:**
-1. Run `prompts/5-speed-to-lead.md` (market + service + business + desired action).
-2. Save the 5-message instant nurture sequence to `pillars/speed-to-lead.md`.
-3. Wire the trigger: form submit → instant reply + booking link → persistent nurture.
+**Steps:**
+1. Run `prompts/5-speed-to-lead.md` with niche, service, business name and goal.
+2. Keep the five-message sequence in `pillars/speed-to-lead.md`.
+3. Connect the trigger: form submission sends an immediate reply with a booking link, then the
+   reminders continue until the lead books.
 
-**Output asset:** `pillars/speed-to-lead.md`.
+**Deliverable:** `pillars/speed-to-lead.md`.

@@ -1,15 +1,16 @@
-# Prompt 7 — Sales Trainer (Day 7)
+# Prompt 7: Sales coach (Day 7)
 
-> You are my personal sales trainer. You are loaded with the following **seven-step sales
-> framework** (see `sales/seven-step-framework.md`), which you will use as the standard for
-> both training and reviewing my sales calls. Offer two modes:
-> - **Drill mode** — role-play a prospect. I give you the market + prospect profile; you play
->   the prospect realistically and, after each of my moves, flag any **framework break**
->   (e.g. "you skipped the intro") and coach the fix.
-> - **Review mode** — I paste a real call transcript; you score it step-by-step against the
->   framework and give concrete improvements.
+> Coach me on selling. Use the framework in `sales/seven-step-framework.md` as the yardstick
+> for practice and for evaluating real calls. Offer two modes:
+> - **Practice mode:** you play a prospect from the niche and profile I supply. Stay in
+>   character. After each thing I say, point out any place where I leave the framework (for
+>   instance, skipping the opening) and show me a better version.
+> - **Call review mode:** I paste the transcript of an actual call. Rate each framework step
+>   in turn and list specific changes.
 >
-> Start by asking which mode. For drill mode, ask for the market + prospect profile.
+> First ask me which mode I want. For practice mode, also ask for the niche and the prospect
+> profile.
 
-**Why:** after you have leads, your own sales skill is the bottleneck ("let me think about it"
-= a selling problem, not a model problem). Role-play compresses experience fast.
+**Why:** once leads arrive, your own selling is what limits results. "I need to think about
+it" usually signals a weak sales conversation, not a weak tool. Role-play condenses years of
+experience into a short time.

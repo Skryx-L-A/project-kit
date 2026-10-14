@@ -1,16 +1,18 @@
-# Market Criteria Rubric (attach to Prompt 1)
+# Market rubric (attach to Prompt 1)
 
-Score each candidate market 1–5 on all four. A market should be strong on **all four**.
+Give each candidate niche a score from 1 to 5 on the four tests below. A good niche scores well
+on all four.
 
-| # | Criterion | What it means | Why |
-|---|-----------|---------------|-----|
-| 1 | **Proof of concept** | Other agencies are already making good money serving this market | Don't be the pioneer / reinvent the wheel ("think MySpace"). Followed paths convert. |
-| 2 | **TAM > 10,000** | At least ~10k+ businesses you could serve | Enough room to never run out of prospects. |
-| 3 | **High ticket** | They charge a lot / spend a lot | Higher fees, fewer clients needed, more budget for your service. |
-| 4 | **Growing** | Market is expanding, not flat or shrinking | Rising tide; new entrants need you. Avoid stagnant/declining. |
+| # | Test | Meaning | Reason |
+|---|------|---------|--------|
+| 1 | **Existing demand** | Other providers already earn well selling similar services here | Following a proven route is safer than pioneering one |
+| 2 | **Size: 10,000+** | At least about 10,000 businesses could become customers | You will not run out of prospects |
+| 3 | **Big tickets** | Customers handle large invoices and budgets | Bigger fees, fewer clients needed |
+| 4 | **Expanding** | The niche is growing rather than flat or shrinking | Growth brings new businesses that need help |
 
-**Bonus signals:** recurring revenue, trendy/hot (longevity, hormones, peptides, weight-loss),
-local brick-and-mortar (Facebook-reachable owners), franchisable (referral networks).
+**Extra points for:** repeat customers, trending areas (longevity, hormone therapy, weight
+loss), physical local shops whose owners can be reached on Facebook, and chain structures that
+create referral networks.
 
-**Output:** exactly 3 markets, each with the 4 scores, the agencies already winning in it,
-rough TAM, typical price points, growth trend, and a recommended pick.
+**Expected output:** three niches, each with the four scores, providers already succeeding,
+an estimated customer count, typical prices, the growth trend and one recommended choice.

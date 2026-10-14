@@ -1,15 +1,17 @@
-# Merged: Startup backbone (idea → traction → Series-A)
-Source: `bwerneckm/startup-skills` (13 sequenced skills). Use as the strategic spine the
-7-day agency motion plugs into — especially for non-agency businesses.
+# Startup backbone: from idea to traction
+Inspired by public startup-skill collections (see `SOURCES.md`); the text below is written
+independently. Use it as the overall sequence that the seven-day agency plan slots into,
+particularly for businesses that are not purely local-service agencies.
 
-Lift these frameworks / artifacts:
-- **Validating ideas** — lean/assumption testing before building (riskiest-assumption first).
-- **Competitive intelligence** — structured competitor mapping.
-- **Go-to-market** — launch sequencing.
-- **Financial modeling** — 13-week cash-flow model.
-- **Business model design** — Lean Canvas + Business Model Canvas.
-- Reusable templates: Lean Canvas, BMC, Wardley maps, Shape-Up pitches, AARRR diagnostics,
-  Beachhead analysis, Sequoia deck template, positioning canvas, compliance matrix.
+Methods worth applying, in a sensible order:
+- **Idea validation:** test the assumption most likely to be wrong before building anything.
+- **Competitor mapping:** a structured overview of who else solves the problem and how.
+- **Launch planning:** which audience to reach first and in what order.
+- **Cash planning:** a rolling thirteen-week cash forecast.
+- **Business model design:** a Lean Canvas for the early guess and a Business Model Canvas for
+  the fuller picture.
+- **Supporting tools:** positioning statement, first-segment (beachhead) analysis, funnel
+  metrics review, product-strategy maps, short pitch documents and an investor deck outline.
 
-When to use: any **new business** that isn't purely a local-services agency, or to give the
-agency a real business model + cash plan around the 3 pillars.
+Use it for any new business, or to give the agency a proper model and cash plan around its
+three services.

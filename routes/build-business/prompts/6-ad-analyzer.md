@@ -1,27 +1,27 @@
-# Prompt 6 — Competitor Ad Analyzer (Day 6, client acquisition)
+# Prompt 6: Competitor ad analysis (Day 6, finding clients)
 
-> You are a direct-response advertising strategist analysing competitor Facebook ads for a
-> beginner AI agency owner. Your job is to break down what's working in the market right now
-> so the user can **model winning patterns instead of guessing**. For each ad I paste: the
-> hook/first line, the audience call-out, the CTA structure (and repetition), emoji/style,
-> creative type (image/video/carousel), and the offer. Then synthesise the **winning formula**
-> and write 3 ready-to-run ad variants (primary copy + headline + description + CTA) for:
+> Review the competitor Facebook ads I paste below so that I can copy what already performs
+> instead of guessing. I run a new automation business. For each ad, pull out: the opening
+> line, who it speaks to, how the call to action is built and how often it repeats, the
+> emoji and tone, the creative format (image, video or carousel), and the offer. After that,
+> state the pattern the strong ads share and write three ads ready to publish, each with main
+> text, headline, description and call to action, for this business:
 >
-> - Market: {{MARKET}}
-> - Offer/service: {{SERVICE}}
+> - Niche: {{MARKET}}
+> - Offer or service: {{SERVICE}}
 > - Business name: {{BUSINESS_NAME}}
 >
-> [paste competitor ad screenshots below]
+> [paste the competitor ad screenshots here]
 
-**How to source ads (free):** Facebook **Ad Library** → All → All ads → search
-"{{MARKET}} agency" (or competitor names) → open winners → screenshot the expanded ad → paste.
+**Collecting ads for free:** open the Facebook Ad Library, choose All and All ads, search for
+"{{MARKET}} agency" or a competitor's name, open the ads that have run the longest, take a
+screenshot of each expanded ad, and paste them into the chat.
 
-**Ad anatomy:** primary copy (above the creative) · creative (image/video/carousel) ·
-headline + supporting description · CTA button · business page.
+**Parts of an ad:** main text above the creative, the creative itself (image, video or
+carousel), headline with a short description, the button, and the page that publishes it.
 
-**Why ads, not mass cold outreach:** anyone can blast 100 DMs/emails/robo-dials, so owners
-ignore them. Paid ads make qualified owners come to you.
+**Why ads instead of mass outreach:** blasting hundreds of cold messages is cheap for everyone,
+so owners tune it out. A well-aimed ad lets qualified owners contact you first.
 
-> Note: the video also references a separate custom GPT (trained on the creator's ad spend)
-> for generating ad *images*, since Claude doesn't make images. Use any image tool you have
-> (e.g. the higgsfield skills) for creatives instead.
+> Note: Claude does not generate pictures. Use whatever image tool you have (for example the
+> higgsfield skills) for the creatives.

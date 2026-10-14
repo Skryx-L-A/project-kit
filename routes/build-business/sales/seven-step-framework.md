@@ -1,19 +1,20 @@
-# Seven-Step Sales Framework (for Prompt 7)
+# Seven-step sales framework (used by Prompt 7)
 
-> The video references the creator's proprietary 7-step framework but does not enumerate all
-> seven steps on screen. The skeleton below is the standard high-ticket consultative motion it
-> demonstrates (it explicitly shows **Step 1 = Intro** — skipping it triggers a "framework
-> break"). Fill/adjust with the user's own steps if they have them.
+> The source this kit drew on mentions a seven-step method but does not spell out every step.
+> What follows is a conventional consultative sequence for high-priced services. Replace or
+> adjust it with your own steps if you have them. Step 1 matters most: leaving it out counts as
+> a break in the framework.
 
-1. **Intro / frame** — build rapport, set the agenda and the frame for the call. (Shown
-   explicitly: skipping this is the canonical "framework break".)
-2. **Discovery** — biggest problem keeping them from their goals; what the last agency failed
-   to deliver; current numbers.
-3. **Goals / gap** — quantify desired outcome vs. current state; cost of inaction.
-4. **Pitch / mechanism** — present the offer as the bridge across the gap (tie to their words).
-5. **Proof** — case studies/results relevant to their vertical (reviews, reactivation wins).
-6. **Price / close** — present price with confidence; ask for the decision.
-7. **Objections / next step** — handle "let me think about it", lock a concrete next action.
+1. **Opening and frame:** build rapport, agree on the agenda and set expectations for the call.
+2. **Discovery:** find the main obstacle to their goals, what earlier providers failed to
+   deliver and where their numbers stand today.
+3. **Goal and gap:** put numbers on the result they want versus where they are now, and on the
+   price of doing nothing.
+4. **Solution:** present your offer as the way across that gap, using their own words.
+5. **Evidence:** show results and case studies from their sector (reviews, reactivation wins).
+6. **Price and decision:** state the price calmly and ask for a decision.
+7. **Objections and next step:** work through "I need to think about it" and fix a concrete
+   follow-up action.
 
-Use in **drill mode** (role-play prospect, flag breaks) and **review mode** (score a real
-transcript step-by-step).
+Use it in practice mode (role-play, flag every departure) and in call review mode (score a real
+transcript step by step).

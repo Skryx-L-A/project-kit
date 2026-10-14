@@ -1,21 +1,23 @@
-# Prompt 2 — Choose Your Ship / ICP finder (Day 2)
+# Prompt 2: Target network finder (Day 2)
 
-> You are a franchise market researcher. Given the target market below, identify the **top 10
-> franchise brands** that best match the filters. Be specific. Use **actual brand names
-> only**. No generic categories. For each: number of locations, growth rate, and why they
-> refer vendors to each other.
+> Take the niche below and research which franchise chains fit it best. List the ten most
+> suitable chains by their real names; do not describe categories. For every chain give the
+> store count, how quickly it is growing, and the reasons its owners recommend suppliers to
+> one another.
 >
-> - Target market: {{MARKET}}
+> - Niche: {{MARKET}}
 > - Country: {{COUNTRY}}
-> - Approximate number of locations in country: {{APPROX_LOCATIONS}}
+> - Rough number of outlets in that country: {{APPROX_LOCATIONS}}
 
-**Why franchises (the "silver fleet"):** owners sit on advisory boards, group chats, and the
-same conferences; they're non-competing (territory radius) so they **refer freely**. One great
-result → dozens of warm, easy-to-close referrals.
+**Why chains:** franchisees of one brand know each other through owner councils, chat groups
+and trade events. Territories keep them from competing, so they pass along vendors they trust.
+One strong result can therefore lead to many warm introductions.
 
-**Facebook referral motion (manual, after Claude returns brands):**
-1. Find one owner of a target franchise on Facebook.
-2. Open their friends list → **mutual friends** (often the franchise founder's network).
-3. Add people with **3–5 mutual friends** — likely fellow owners.
-4. Build your **own Facebook profile as a marketing asset**: post your work with these owners
-   consistently (case studies, dinners, events). Local owners 30+ live on Facebook.
+**Facebook introduction routine (done by hand once the chains are known):**
+1. Locate a franchisee of a chosen chain on Facebook.
+2. Browse that person's friends and look at the shared connections; the brand's founders and
+   fellow owners tend to show up there.
+3. Send requests to people who share three to five connections with you, since they are likely
+   to be owners in the same network.
+4. Treat your own profile as a shop window: keep posting about the work you do for these
+   owners (results, meetups, dinners). Owners aged thirty and up are usually active there.
